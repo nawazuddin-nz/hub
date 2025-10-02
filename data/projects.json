@@ -1,0 +1,265 @@
+{
+  "semesters": [
+
+    {
+      "id": "BCAS101",
+      "semester": "Semester 1",
+      "projects": [
+
+        {
+          "id": "BCAS101",
+          "title": "NH Games 1.0",
+          "desc": "NH Games is a college project featuring a variety of fun and logical games, particularly it has 5 games, built using HTML, CSS, and JS. This provides simple yet engaging experiences, with entertainment and problem-solving.",
+          "date": "1st Sem 23-24",
+          "whatsapp": "https://wa.link/0ijg5t",
+          "projectLink": "https://nhgames1.tiiny.site/",
+          "team": [
+            {
+              "name": "Nawaz",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgphZCy8VKCkk6B4xdaFJ5dUAMVeqq3eq-IWlbkH3G8LtOr5_cgRMEzkSiA_17SCdu00u4INEV8B2FftvtZ2dBFmRsI9Abg_2rh-eewE-dHQzcbN4tqzj69dL4zXuUje2cAE2st6pCV4Abf98qrAfO038kFMKEONJoIXuwmfHVtj-PJvHA_bGxQQ4nWfpuN/s1600/WhatsApp%20Image%202024-09-22%20at%208.34.27%20PM.jpeg",
+              "linkedin": ""
+            },
+            {
+              "name": "Harsha",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuLC-IH1AhLjRP39q9Zdv69rRixXu2scKi-Wws-EvCNE2UE6TuT6VKxycsISH_HTn7fZixg4eOZmYmc1M2v8xuCDSHmOjcvlYmL50MoYcVaVqPv4-jGilcS52evCMq4ni7GuGfuzfKHJuXXg01YCMNV9wFEMlJPP4yaYhe1r61Aw1m4ZwKDgiKEqLUu43N/s1600/ht.jpeg",
+              "linkedin": ""
+            }
+          ]
+        },
+
+        {
+          "id": "BCAS102",
+          "title": "Find Mr Doc",
+          "desc": "FIND MRDOC is a C++ college project designed to streamline doctor appointments, reducing wait times and physical contact in queues. This prototype is for academic purposes only and has not been deployed for practical use.",
+          "date": "1st Sem 23-24",
+          "whatsapp": "",
+          "projectLink": "https://drive.google.com/file/d/1k4cPHt_cEpv-uARdNUY8NKWAoXSE8l9Z/view?usp=sharing",
+          "team": [
+            {
+              "name": "Lavanya",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXU8k6ODU09tAPwhYwtBRqFR0PHlv_GM3HePb3KPrg4fXV5uev1jDk6jp_7QYXDAoeOXpftdRCGeWgvgg3AMXEBbJYjvEKvnteUb2XstmvyKt9cVZki6vTpEVQETyD9GlnOxQxtDnhipjUO-CURiWLMj97y4vrekYvuWRVpntwre8GwazJkAG1p1X2fpn/s1600/bca.jpeg",
+              "linkedin": ""
+            },
+            {
+              "name": "Harshitha",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXU8k6ODU09tAPwhYwtBRqFR0PHlv_GM3HePb3KPrg4fXV5uev1jDk6jp_7QYXDAoeOXpftdRCGeWgvgg3AMXEBbJYjvEKvnteUb2XstmvyKt9cVZki6vTpEVQETyD9GlnOxQxtDnhipjUO-CURiWLMj97y4vrekYvuWRVpntwre8GwazJkAG1p1X2fpn/s1600/bca.jpeg",
+              "linkedin": ""
+            }
+          ]
+        }
+      ]
+    },
+
+
+
+    {
+      "id": "BCAS201",
+      "semester": "Semester 2",
+      "projects": [
+        {
+          "id": "BCAS201",
+          "title": "NH Games",
+          "desc": "NH Games is a college project featuring a variety of fun and logical games, built using HTML, CSS, and JavaScript. This provides simple yet engaging experiences, with entertainment and problem-solving.",
+          "date": "2nd Sem 23-24",
+          "whatsapp": "https://wa.link/0ijg5t",
+          "projectLink": "https://nawazuddin-nz.github.io/nhgames2.0/",
+         "team": [
+            {
+              "name": "Nawaz",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgphZCy8VKCkk6B4xdaFJ5dUAMVeqq3eq-IWlbkH3G8LtOr5_cgRMEzkSiA_17SCdu00u4INEV8B2FftvtZ2dBFmRsI9Abg_2rh-eewE-dHQzcbN4tqzj69dL4zXuUje2cAE2st6pCV4Abf98qrAfO038kFMKEONJoIXuwmfHVtj-PJvHA_bGxQQ4nWfpuN/s1600/WhatsApp%20Image%202024-09-22%20at%208.34.27%20PM.jpeg",
+              "linkedin": "cc"
+            },
+            {
+              "name": "Harsha",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuLC-IH1AhLjRP39q9Zdv69rRixXu2scKi-Wws-EvCNE2UE6TuT6VKxycsISH_HTn7fZixg4eOZmYmc1M2v8xuCDSHmOjcvlYmL50MoYcVaVqPv4-jGilcS52evCMq4ni7GuGfuzfKHJuXXg01YCMNV9wFEMlJPP4yaYhe1r61Aw1m4ZwKDgiKEqLUu43N/s1600/ht.jpeg",
+              "linkedin": "cc"
+            }
+          ]
+        },
+        {
+          "id": "BCAS202",
+          "title": "Eden Feast (Restaurant)",
+          "desc": "Eden Feast is a vibrant restaurant website focusing on frontend UI built with HTML, CSS and JS.",
+          "date": "2nd Sem 23-24",
+          "whatsapp": "https://wa.link/7unxc5",
+          "projectLink": "https://edenfeast.tiiny.site/",
+          "team": [
+            {
+              "name": "Thanishq",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXU8k6ODU09tAPwhYwtBRqFR0PHlv_GM3HePb3KPrg4fXV5uev1jDk6jp_7QYXDAoeOXpftdRCGeWgvgg3AMXEBbJYjvEKvnteUb2XstmvyKt9cVZki6vTpEVQETyD9GlnOxQxtDnhipjUO-CURiWLMj97y4vrekYvuWRVpntwre8GwazJkAG1p1X2fpn/s1600/bca.jpeg",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "id": "BCAS203",
+          "title": "Lazarev Clone",
+          "desc": "This is an innovative website designed to show how animation works on websites! Built using HTML, CSS, JS, GSAP, and LOCOMOTIVE which makes the website look amazing. Where each page is designed to ensure a balance of aesthetic look.",
+          "date": "2nd Sem 23-24",
+          "whatsapp": "https://wa.link/wcxe8x",
+          "projectLink": "https://lazarev.tiiny.site/",
+          "team": [
+            {
+              "name": "Abhishek",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXU8k6ODU09tAPwhYwtBRqFR0PHlv_GM3HePb3KPrg4fXV5uev1jDk6jp_7QYXDAoeOXpftdRCGeWgvgg3AMXEBbJYjvEKvnteUb2XstmvyKt9cVZki6vTpEVQETyD9GlnOxQxtDnhipjUO-CURiWLMj97y4vrekYvuWRVpntwre8GwazJkAG1p1X2fpn/s1600/bca.jpeg",
+              "linkedin": ""
+            }
+          ]
+        }
+      ]
+    },
+
+
+
+
+    {
+      "id": "BCAS301",
+      "semester": "Semester 3",
+      "projects": [
+        {
+          "id": "BCAS301",
+          "title": "KU-Hub",
+          "desc": "A collaborative college project by Nawaz and Harsha, featuring courses, semester-wise resources, for students. And a platform to display student projects with team contact options. The blog provides updates on college activities.",
+          "date": "3rd Sem 24-25",
+          "whatsapp": "https://wa.link/0ijg5t",
+          "projectLink": "https://ku-hub.blogspot.com/p/import-urlhttpsfonts.html",
+          "team": [
+            {
+              "name": "Nawaz",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgphZCy8VKCkk6B4xdaFJ5dUAMVeqq3eq-IWlbkH3G8LtOr5_cgRMEzkSiA_17SCdu00u4INEV8B2FftvtZ2dBFmRsI9Abg_2rh-eewE-dHQzcbN4tqzj69dL4zXuUje2cAE2st6pCV4Abf98qrAfO038kFMKEONJoIXuwmfHVtj-PJvHA_bGxQQ4nWfpuN/s1600/WhatsApp%20Image%202024-09-22%20at%208.34.27%20PM.jpeg",
+              "linkedin": ""
+            },
+            {
+              "name": "Harsha",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuLC-IH1AhLjRP39q9Zdv69rRixXu2scKi-Wws-EvCNE2UE6TuT6VKxycsISH_HTn7fZixg4eOZmYmc1M2v8xuCDSHmOjcvlYmL50MoYcVaVqPv4-jGilcS52evCMq4ni7GuGfuzfKHJuXXg01YCMNV9wFEMlJPP4yaYhe1r61Aw1m4ZwKDgiKEqLUu43N/s1600/ht.jpeg",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "id": "BCAS302",
+          "title": "Guess the Number",
+          "desc": "Guess the Number is a fun Python game where the computer picks a random number, and you try to guess it. After each guess, you receive hints like 'Too High' or 'Too Low' until you find the correct number.",
+          "date": "3rd Sem 24-25",
+          "whatsapp": "",
+          "projectLink": "https://docs.google.com/presentation/d/1nJX2TPHCM1owU0uCYnFv382NsXNpMBrW/edit?usp=sharing&ouid=104097438697037754338&rtpof=true&sd=true",
+          "team": [
+            {
+              "name": "Afsa Parveen",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXU8k6ODU09tAPwhYwtBRqFR0PHlv_GM3HePb3KPrg4fXV5uev1jDk6jp_7QYXDAoeOXpftdRCGeWgvgg3AMXEBbJYjvEKvnteUb2XstmvyKt9cVZki6vTpEVQETyD9GlnOxQxtDnhipjUO-CURiWLMj97y4vrekYvuWRVpntwre8GwazJkAG1p1X2fpn/s1600/bca.jpeg",
+              "linkedin": ""
+            }
+          ]
+        }
+      ]
+    },
+
+
+
+
+    {
+      "id": "BCAS401",
+      "semester": "Semester 4",
+      "projects": [
+        {
+          "id": "BCAS401",
+          "title": "AI Personal College Chatbot",
+          "desc": "Our Personal College Chatbot is a helpful tool for students to easily access information about college venues, faculty members, and subjects. It saves time by providing quick answers and helps students stay connected with their academic environment.",
+          "date": "4th Sem 24-25",
+          "whatsapp": "https://wa.link/0ijg5t",
+          "projectLink": "",
+          "pptLink": "https://docs.google.com/presentation/d/1QIP2axYF6fyLgTnteXt3AHy-Blxj6IDw/edit?usp=sharing&ouid=103105048356912197951&rtpof=true&sd=true",
+          "team": [
+            {
+              "name": "Nawaz",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgphZCy8VKCkk6B4xdaFJ5dUAMVeqq3eq-IWlbkH3G8LtOr5_cgRMEzkSiA_17SCdu00u4INEV8B2FftvtZ2dBFmRsI9Abg_2rh-eewE-dHQzcbN4tqzj69dL4zXuUje2cAE2st6pCV4Abf98qrAfO038kFMKEONJoIXuwmfHVtj-PJvHA_bGxQQ4nWfpuN/s1600/WhatsApp%20Image%202024-09-22%20at%208.34.27%20PM.jpeg",
+              "linkedin": ""
+            },
+            {
+              "name": "Harsha",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuLC-IH1AhLjRP39q9Zdv69rRixXu2scKi-Wws-EvCNE2UE6TuT6VKxycsISH_HTn7fZixg4eOZmYmc1M2v8xuCDSHmOjcvlYmL50MoYcVaVqPv4-jGilcS52evCMq4ni7GuGfuzfKHJuXXg01YCMNV9wFEMlJPP4yaYhe1r61Aw1m4ZwKDgiKEqLUu43N/s1600/ht.jpeg",
+              "linkedin": ""
+            },
+            {
+              "name": "Lavanya",
+              "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXU8k6ODU09tAPwhYwtBRqFR0PHlv_GM3HePb3KPrg4fXV5uev1jDk6jp_7QYXDAoeOXpftdRCGeWgvgg3AMXEBbJYjvEKvnteUb2XstmvyKt9cVZki6vTpEVQETyD9GlnOxQxtDnhipjUO-CURiWLMj97y4vrekYvuWRVpntwre8GwazJkAG1p1X2fpn/s1600/bca.jpeg",
+              "linkedin": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    
+    
+   {
+  "id": "BCAS501",
+  "semester": "No projects yet",
+  "projects": [
+    {
+      "id": "BCAS501",
+      "title": "",
+      "desc": "",
+      "date": "",
+      "whatsapp": "",
+      "projectLink": "",
+      "pptLink": "",
+      "team": [
+        {
+          "name": "",
+          "img": "",
+          "linkedin": ""
+        },
+        {
+          "name": "",
+          "img": "",
+          "linkedin": ""
+        },
+        {
+          "name": "",
+          "img": "",
+          "linkedin": ""
+        }
+      ]
+    }
+  ]
+},
+
+
+    
+     {
+  "id": "BCAS601",
+  "semester": "No projects yet",
+  "projects": [
+    {
+      "id": "BCAS601",
+      "title": "",
+      "desc": "",
+      "date": "",
+      "whatsapp": "",
+      "projectLink": "",
+      "pptLink": "",
+      "team": [
+        {
+          "name": "",
+          "img": "",
+          "linkedin": ""
+        },
+        {
+          "name": "",
+          "img": "",
+          "linkedin": ""
+        },
+        {
+          "name": "",
+          "img": "",
+          "linkedin": ""
+        }
+      ]
+    }
+  ]
+}
+
+
+  ]
+}
