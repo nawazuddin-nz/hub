@@ -762,7 +762,7 @@ async function loadProjects() {
         <div class="project-container">
     `;
 
-    sem.projects.forEach(project => {
+   sem.projects.forEach(project => {
       innerHTML += `
         <div class="project-card">
           <div class="left">
@@ -778,14 +778,16 @@ async function loadProjects() {
           </div>
           <div class="team">
             <h4>Team</h4>
-            <div class="team-list">
+           
               ${project.team.map(m => `
                 <div class="team-images">
                   <img src="${m.img}" alt="${m.name}" />
+                  <div class="overlay">
                   <p>${m.name}</p>
                   ${m.linkedin ? `<a href="${m.linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>` : ""}
+                  </div>
                 </div>`).join("")}
-            </div>
+           
           </div>
         </div>
       `;

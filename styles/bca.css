@@ -646,6 +646,12 @@
         transition: transform 0.3s ease;
     }
 
+    .overlay{
+        display: flex;
+        gap: 5px;
+    }
+
+
     .team-images img:hover {
         transform: scale(3.5);
         z-index: 3;
