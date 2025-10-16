@@ -27,6 +27,29 @@
           ]
         },
 
+
+
+        {
+  "id": "zz",
+  "title": "zz",
+  "desc": "zz",
+  "date": "zz",
+  "whatsapp": "https://www.bbb.org/",
+  "projectLink": "https://www.bbb.org/",
+  "team": [
+    {
+      "name": "vv",
+      "img": "https://www.1investing.in/wp-content/uploads/2019/05/is-bbb-worth-it_1.png",
+      "linkedin": "https://www.bbb.org/"
+    },
+    {
+      "name": "vv",
+      "img": "https://www.1investing.in/wp-content/uploads/2019/05/is-bbb-worth-it_1.png",
+      "linkedin": "https://www.bbb.org/"
+    }
+  ]
+},
+
         {
           "id": "BCAS102",
           "title": "Find Mr Doc",
