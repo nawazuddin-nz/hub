@@ -1,0 +1,385 @@
+
+
+<style>
+   
+  
+  /* entry */
+  
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+   
+    #PopularPosts1,
+    #footer, 
+    .page header,
+    #comments,
+    .post-share-buttons,
+    h3.post-title, 
+    .bg-photo-container,
+    .bg-photo-overlay,
+    .centered-top-container,
+    .collapsed-header .centered-top-placeholder ,
+    body.item-view .Blog .post-title-container,
+    body.item-view .Blog .post-header-container ,
+    .aside,
+    .sidebar{
+        display: none;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  body{
+    background-color:white !important;
+  }
+    
+   body.item-view .post-body {
+      color: #292929;
+      font: 400 16px poppins;
+    
+  }
+    body.item-view .Blog .post-body-container{
+    padding:0;
+      margin:0;
+    }
+    
+    body.item-view .Blog .post-body{
+      margin:0;
+    }
+    
+    .post-body {
+        color: #000;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    .post-body img { height: unset; }
+    
+    .post-body h3 { color: #000; }
+    
+    footer h3 { color: #fff; }
+    
+    .Blog .blog-posts .post-outer-container .post-outer {
+         padding-bottom: 0; 
+    }
+    
+    .Blog .blog-posts .post-outer-container,
+    .centered-bottom { 
+        padding: 0;
+    }
+    
+    .page_body .widget {
+        margin-bottom: 0;
+    }
+    
+    .page_body .centered {
+        padding: 0;
+      max-width: unset;
+    }
+    
+    
+    body.item-view .Blog .post-body::first-letter {
+  
+      margin:0;
+  
+  }
+    
+    @media screen and (min-width: 1440px) {
+      .sidebar-container {
+      display:none;
+      }
+        
+    
+      .page{
+      width:135vw;
+        display:flex;
+        justify-content:center;
+      
+      }
+ 
+    .page_body{
+   margin-left:345px;
+      margin-right:320px;
+      
+     
+      }
+  }
+    
+    @media screen and (max-width: 800px) {
+      div.widget.Blog .blog-posts .post-outer-container {
+          padding: 0;
+      }
+    }
+    
+    nav a:hover {
+        color: #000;
+    }
+    
+    a:visited {
+        color: #000;
+    }
+    
+    .buttons a:visited,
+    footer a:visited {
+        color: #fff;
+    }
+    
+    .post-body footer h3 {color: #fff;}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Custom Styles */
+    
+   html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* No scrolling needed */
+            font-family: poppins;
+        }
+
+        .bigboul {
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* Ensure position relative for children positioning */
+        }
+	
+  
+
+        .mainboul {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio3b5SZXyWpm814kK08SSenlR2fyHgahPIcWJrPfFIyt6_tysmPZwkUOaTz15niu_7lgoJu657wp2UuJmOj0SOqO81_d6K1caqo7bZft5-IrvY6Y5RI-23cjRcLDY5ix82p-TqElrftpOZkgVkhOXhqfCZQCCKGNcWWl6qLsSRpJxMF-MEHcHo2L001srR/s1600/ku-bg.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Fixed background image */
+            position: relative;
+        }
+
+        .mainboul::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Gradient covers full width */
+            height: 100%;
+            background: linear-gradient(to right, rgba(7, 6, 6, 0.705), #356a5400);
+            z-index: 1; /* Lower z-index */
+            pointer-events: none;
+        }
+
+        .textboul {
+            position: absolute;
+            z-index: 2; /* Higher z-index to appear above the gradient */
+            top: 60%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 80%; /* Make text container responsive */
+        }
+
+        .animated-name {
+            font-size: 5vw; /* Responsive font size */
+            font-weight: bold;
+            width: 65%;
+            text-align: left;
+            margin-left: 35%;
+            border-left: 7px solid rgb(255, 67, 67);
+            line-height: 1;
+            border-radius: 5px;
+            padding-left: 5px;
+            display: flex;
+          
+            justify-content: flex-start;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            opacity: 0; /* Start with hidden */
+            animation: moveIn 1s ease-out forwards, fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes moveIn {
+            0% {
+                transform: translate(-150%, -50%); /* Start off-screen */
+            }
+            100% {
+                transform: translate(0%, -50%); /* Move to the end position */
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .explore-button {
+            padding: 10px 20px;
+            font-size: 25px; /* Responsive font size */
+            color: rgb(0, 0, 0);
+            background-color: #ffea00;
+            border: none;
+            border-radius: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 60px;
+            opacity: 0; /* Start with hidden */
+            animation: fadeIn 1s ease-out  1.5s forwards; /* Fade in after text */
+            text-align: center;
+            margin-top: 20px;
+            
+            transition: 0.3s all ease;
+        }
+        .explore-button:hover{
+            background-color: rgb(255, 67, 67);
+            border: 2px solid rgb(255, 255, 255);
+            transform: scale(1.1);
+        }
+
+        .three-words {
+             /* Responsive font size */
+            color: white;
+            margin-top: -60px;
+            margin-left: 65px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            opacity: 0; /* Start with hidden */
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in after button */
+            white-space: nowrap; /* Prevent wrapping */
+            /* margin-top: 20px; */
+        }
+
+        .three-words span {
+            margin: 0 1rem; /* Adjust spacing between words */
+        }
+        .ug-sub{
+    font-size: 20px;
+   word-spacing: 10px;
+}   
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (min-width: 1440px){
+
+
+    .ug-sub{
+    font-size: 25px;
+   word-spacing: 10px;
+		}  
+  
+.bigboul{
+          width:140vw !important;
+        }
+        
+       .three-words{
+         margin-left:-40px !important;
+      }
+   .explore-button{
+      margin-left:-40px !important;
+  }
+      
+}
+
+
+
+
+
+        /* Media Queries for Mobile View */
+        @media (max-width: 770px) {
+            .textboul {
+                width: 90%; /* Adjust width for mobile view */
+                top: 40%; /* Adjust position for mobile view */
+                left: 50%;
+                transform: translate(-50%, -40%);
+            }
+
+            .animated-name {
+                font-size: 40px; 
+              width:80%;
+              margin-left:25%;
+            }
+
+            .explore-button {
+                font-size: 29x; /* Increase font size for mobile view */
+                
+                margin-left: 0px;/* Increase padding for better touch */
+            }
+
+            .three-words {
+                font-size: 4vw;
+                margin-left: 3px; /* Increase font size for mobile view */
+            }
+
+            .mainboul::before {
+                background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .animated-name {
+              width:100%;
+        
+                font-size: 45px; /* Larger font size for very small screens */
+                margin-left: 10%;
+            }
+
+            .explore-button {
+                font-size: 27px; /* Larger font size for very small screens */
+                /* Increase padding for better touch */
+            }
+
+            .three-words p{
+                font-size: 18px !important;
+                margin-top: 30px/* Larger font size for very small screens */
+            }
+        }
+  
+  
+      
+    
+  </style>
+  
+   <div class="bigboul">
+        <div class="mainboul"></div>
+        <div class="textboul">
+            <div class="animated-name">KISHKINDA <br> UNIVERSITY</div>
+            <div class="three-words">
+                <p class="ug-sub " >Study-Material | Projects | Blog</p>
+            </div>
+           <a href="https://ku-hub.vercel.app" ><button class="explore-button">Explore..</button></a>
+        </div>
+    </div>
+  
+ 
+
+  
+    
+  
+  
+  
