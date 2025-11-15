@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KU Hub | Explore</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ku-red: #f44336;
+      --ku-bg: #f7f7f7;
+      --ku-text: #222;
+      --ku-soft: #666;
+      --ku-border: #e6e6e6;
+      --radius: 16px;
+      --transition: 0.2s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--ku-bg);
+      color: var(--ku-text);
+      padding: 1.8rem 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 900px;
+      padding: 0 1.2rem;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h2.section-title {
+      margin-top: 1.6rem;
+      margin-bottom: 0.6rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--ku-red);
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    /* CARD */
+    .card {
+      background: #fff;
+      border: 1px solid var(--ku-border);
+      border-radius: var(--radius);
+      padding: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+      border-color: rgba(244, 67, 54, 0.35);
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: rgba(244, 67, 54, 0.06);
+      border-radius: 50%;
+      top: -50px;
+      right: -50px;
+    }
+
+    .emoji {
+      font-size: 1.8rem;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--ku-soft);
+      line-height: 1.45;
+    }
+
+    .card-btn {
+      margin-top: auto;
+      padding: 0.50rem 0.9rem;
+      border-radius: 12px;
+      background: var(--ku-red);
+      border: none;
+      color: white;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .card-btn:hover {
+      background: #e53935;
+      box-shadow: 0 6px 14px rgba(244,67,54,0.35);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .card-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <h1>KU Hub Explore ✨</h1>
+    <p style="color: var(--ku-soft); margin-bottom:1.2rem;">
+      Clubs, events, workshops & more for KU students.
+    </p>
+
+    <!-- SECTION: Clubs -->
+    <h2 class="section-title">🏫 Clubs</h2>
+    <div class="grid">
+
+      <!-- CARD 1 (custom as you requested) -->
+      <div class="card">
+        <div class="card-title">
+          <span class="emoji">🎯</span> BCA 1st Year Clubs
+        </div>
+        <div class="card-desc">
+         Explore and see which club you wanna join as a BCA 1st year student(Explorer) at KU!
+        </div>
+       <a href="https://forms.gle/6kTaG1Adchev76Ce7"> <button class="card-btn">Join</button></a>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="emoji">💻</span> BCA 2nd year, Clubs
+        </div>
+        <div class="card-desc">
+          As a BCA 2nd year (Builder) at KU, explore the clubs and join the one that inspires you!
+        </div>
+        <button class="card-btn">Join</button>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <div class="card-title">
+          <span class="emoji">🎨</span>  BCA 3rd year, Clubs
+        </div>
+        <div class="card-desc">
+          Here comes the <b>visioners</b>, Yup the Final year students, Register urself as a visioner for ur choosen club!.
+        </div>
+        <button class="card-btn">Join</button>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</body>
+</html>
