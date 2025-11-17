@@ -93,6 +93,21 @@
           ]
         },
         {
+  "id": "BCAS204",
+  "title": "KBR Travelling",
+  "desc": "KBR Travel is a dynamic and visually engaging travel website designed to inspire exploration. It showcases popular destinations, detailed tour packages.With smooth animations, interactive visuals, and user-friendly navigation, this website enhances travel planning for users seeking comfort, adventure, and unforgettable journeys.",
+  "date": "2nd sem 25-26",
+  "whatsapp": "https://wa.link/msh77v",
+  "projectLink": "https://katarisurendravarma-prog.github.io/Kbrtravelling/",
+  "team": [
+    {
+      "name": "K Surendra",
+      "img": "",
+      "linkedin": ""
+    }
+  ]
+},
+        {
           "id": "BCAS203",
           "title": "Lazarev Clone",
           "desc": "This is an innovative website designed to show how animation works on websites! Built using HTML, CSS, JS, GSAP, and LOCOMOTIVE which makes the website look amazing. Where each page is designed to ensure a balance of aesthetic look.",
