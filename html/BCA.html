@@ -10,13 +10,13 @@
 
     <style>
     /* ===== Resources section only (scoped with res- prefix, does not touch the old style) ===== */
-    .res-sec{max-width:1000px;margin:40px auto;padding:36px 24px;background:#fff;border:1px solid #ececf0;border-radius:22px;box-shadow:0 10px 36px rgba(20,20,30,.12);color:#16181d;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+    .res-sec{box-sizing:border-box;width:92%;max-width:1000px;align-self:center;margin:40px auto;padding:36px 24px;background:#fff;border:1px solid #ececf0;border-radius:22px;box-shadow:0 10px 36px rgba(20,20,30,.12);color:#16181d;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
     .res-head{text-align:center;margin-bottom:26px}
     .res-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#c8102e}
     .res-head h2{margin:6px 0 0;font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#16181d}
     .res-head h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:#c8102e;margin:12px auto 8px}
     .res-head p{margin:0;color:#6b7280;font-size:15px}
-    .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+    .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;width:100%}
     .res-card{position:relative;display:flex;flex-direction:column;gap:6px;padding:24px;background:#fff;border:1px solid #ececf0;border-radius:18px;overflow:hidden;text-decoration:none;color:#16181d;transition:transform .3s,box-shadow .3s,border-color .3s}
     .res-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#c8102e;transform:scaleY(0);transform-origin:top;transition:transform .3s}
     .res-num{font-size:34px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1.5px #c8102e;transition:color .3s}
@@ -29,6 +29,9 @@
     .res-card.off{background:#f6f6f8;cursor:not-allowed;opacity:.65}
     .res-card.off .res-num{-webkit-text-stroke-color:#a3a3ad}
     .res-card.off .res-sub,.res-card.off .res-go{color:#8b8b96}
+    .res-card{box-sizing:border-box;min-width:0}
+    @media(max-width:700px){.res-sec{width:94%;padding:26px 14px;margin:28px auto}.res-grid{grid-template-columns:repeat(2,1fr);gap:12px}.res-card{padding:16px}.res-num{font-size:26px}.res-name{font-size:16px}.res-sub{font-size:10px;letter-spacing:1px}}
+    @media(max-width:380px){.res-grid{grid-template-columns:1fr}}
     </style>
 
 </head>
