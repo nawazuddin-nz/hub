@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="/styles/bca.css">
     <link rel="icon" type="image/png" href="/data/media/favku.ico">
 
+    <style>
+    /* ===== Resources section only (scoped with res- prefix, does not touch the old style) ===== */
+    .res-sec{max-width:1000px;margin:40px auto;padding:36px 24px;background:#fff;border:1px solid #ececf0;border-radius:22px;box-shadow:0 10px 36px rgba(20,20,30,.12);color:#16181d;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+    .res-head{text-align:center;margin-bottom:26px}
+    .res-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#c8102e}
+    .res-head h2{margin:6px 0 0;font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#16181d}
+    .res-head h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:#c8102e;margin:12px auto 8px}
+    .res-head p{margin:0;color:#6b7280;font-size:15px}
+    .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+    .res-card{position:relative;display:flex;flex-direction:column;gap:6px;padding:24px;background:#fff;border:1px solid #ececf0;border-radius:18px;overflow:hidden;text-decoration:none;color:#16181d;transition:transform .3s,box-shadow .3s,border-color .3s}
+    .res-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#c8102e;transform:scaleY(0);transform-origin:top;transition:transform .3s}
+    .res-num{font-size:34px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1.5px #c8102e;transition:color .3s}
+    .res-sub{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c8102e;margin-top:6px}
+    .res-name{font-size:19px;font-weight:700}
+    .res-go{margin-top:8px;font-size:14px;font-weight:700;color:#c8102e}
+    a.res-card:hover{transform:translateY(-5px);border-color:rgba(200,16,46,.3);box-shadow:0 18px 40px rgba(200,16,46,.16)}
+    a.res-card:hover::before{transform:scaleY(1)}
+    a.res-card:hover .res-num{color:#c8102e}
+    .res-card.off{background:#f6f6f8;cursor:not-allowed;opacity:.65}
+    .res-card.off .res-num{-webkit-text-stroke-color:#a3a3ad}
+    .res-card.off .res-sub,.res-card.off .res-go{color:#8b8b96}
+    </style>
+
 </head>
 
 <body>
@@ -25,14 +48,24 @@
             aspiring
             to build a career in software development, IT consulting, or systems management.
         </p>
-        <a href="#line">
-            <div class="prj-button">Projects</div>
+        <a href="#resources">
+            <div class="prj-button">Resources</div>
         </a>
     </div>
 
 
+    <!-------------------------- NEW: Resources (top) -------------------->
+    <section class="res-sec" id="resources">
+        <div class="res-head">
+            <span class="res-eyebrow">Handpicked</span>
+            <h2>Resources</h2>
+            <p>Click a card to open it</p>
+        </div>
+        <div class="res-grid" id="res-grid"></div>
+    </section>
 
-    <!-------------------------- Materials card starts -------------------->
+
+    <!-------------------------- Materials card starts (old style, unchanged) -------------------->
 
     <h3>Explore Study-Materials, Model QP,s and more..</h3>
     <div class="holderr">
@@ -61,227 +94,55 @@
         <!--Right Section with cardzxs-->
         <div class="right-section">
 
-            <!----------------------- Actual cards strts ------------------->
-
-
-
-
-            <!----------------------- sem 1 materials cards strts ------------------->
+            <!----------------------- sem 1 card ------------------->
             <div class="cardzx active" id="cardzx1">
                 <div class="card">
                     <div class="card-head">
                         <h2>SEM 1 </h2>
                     </div>
 
-                    <!----------------------- 1 subject ------------------->
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Web Designing</p>
-                            <!--<p id="links">Source Unavailable <a href="https://wa.link/0ijg5t">Contribute</a></p>-->
-                            <p id="links">
-                                <a
-                                    href="https://drive.google.com/file/d/1mMMwwLeK2fElNwkraoLydDpFtHtn9j7s/view?usp=sharing">Material</a>
-                                <a
-                                    href="https://drive.google.com/uc?export=download&amp;id=1OJn7SQUgyIF_L2tVeKiD1UCpGgjdpSdq">Lab
-                                    Manual</a>
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/file/d/1mMMwwLeK2fElNwkraoLydDpFtHtn9j7s/view?usp=sharing">Material</a>
+                                <a href="https://drive.google.com/uc?export=download&amp;id=1OJn7SQUgyIF_L2tVeKiD1UCpGgjdpSdq">Lab Manual</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>C Programming</p>
-                            <p id="links"><a
-                                    href="https://drive.google.com/uc?export=download&amp;id=1M93H17H5EEAMYLsUgEAJOwBZ27xEvOgP">Material</a>
-                                <a
-                                    href="https://drive.google.com/uc?export=download&amp;id=1WzialRU3vrsre3_v_QRb4C4XS0keAIHp">Lab
-                                    Manual</a>
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/uc?export=download&amp;id=1M93H17H5EEAMYLsUgEAJOwBZ27xEvOgP">Material</a>
+                                <a href="https://drive.google.com/uc?export=download&amp;id=1WzialRU3vrsre3_v_QRb4C4XS0keAIHp">Lab Manual</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
 
                     <div class="part">
                         <div class="text">
-                            <p><b>Subject: </b> PSWP</p>
-                            <p id="links"> <a
-                                    href="https://drive.google.com/uc?export=download&amp;id=15sLdOqU5t7n504Yi30kYZnAx6S_2tkk0">Lab
-                                    Manual</a></p>
+                            <p><b>Subject: </b>PSWP</p>
+                            <p id="links"><a href="https://drive.google.com/uc?export=download&amp;id=15sLdOqU5t7n504Yi30kYZnAx6S_2tkk0">Lab Manual</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Kannada</p>
-                            <p id="links"> <a
-                                    href="https://drive.google.com/file/d/1w6QOrgyYrcvjwNvyFsz52zS-w5eEnYlK/view?usp=sharing">Vyavaharika</a>
-                                <a
-                                    href="https://drive.google.com/file/d/11iFwLM5dnRbP5JdRkSmDj4QhYPRjD69j/view?usp=sharing">Adalita</a>
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/file/d/1w6QOrgyYrcvjwNvyFsz52zS-w5eEnYlK/view?usp=sharing">Vyavaharika</a>
+                                <a href="https://drive.google.com/file/d/11iFwLM5dnRbP5JdRkSmDj4QhYPRjD69j/view?usp=sharing">Adalita</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
-                    <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b> English</p>
-                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
-                    <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b>Mathematics</p>
-                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
-                    <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b> Digital fluency</p>
-                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
-                    <div class="part">
-                        <div class="softwares">
-                            <p><b>Previous QP's:</b></p>
-                            <p id="links">
-                                <a
-                                    href="https://drive.google.com/file/d/1khy9TpPm8O1Zby5Ko2SEonPTHdJBxLJB/view?usp=sharing">IA
-                                    1</a>
-                                <a
-                                    href="https://drive.google.com/file/d/1yLSqwxqYbRRbZpwa0FWMJ2H9bBbHGR8V/view?usp=sharing">IA
-                                    2</a>
-                                <a
-                                    href="https://drive.google.com/file/d/1KrfnGCL-8asLgz29AY-UBAU-CcGGtgUh/view?usp=sharing">
-                                    SEM End</a>
-                                <!-- <a
-                                href="#">IA 3</a> -->
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!----------------------- 1 material card ends ------------------->
-
-
-
-
-
-
-
-
-            <!----------------------- 2nd card strts ------------------->
-
-            <div class="cardzx" id="cardzx2">
-                <div class="card">
-                    <div class="card-head">
-                        <h2>SEM 2 </h2>
-            
-                    </div>
-
-                   <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b>Java</p>
-                            <p id="links">
-                                <a href="https://drive.google.com/uc?export=download&amp;id=1PrVDNRrBORL3VP0pxjx1kapD-sSTFj3O">Material</a>
-                                <a  href="https://drive.google.com/uc?export=download&amp;id=1wSYVbu7Ok_UeEHDM0hhY0pXmnv-h6cUo">Lab
-                                    Manual</a>
-                            </p>
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
-
-                    <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b>Data Structures C</p>
-                            <p id="links"><a
-                                    href="https://drive.google.com/uc?export=download&amp;id=1QNkPP0OIqAzP_CvhWM7TDaiO9zJapdAm">Material</a>
-                                <a
-                                    href="https://drive.google.com/uc?export=download&amp;id=1jMqIEmtCBEdu9HdMkAjhNYawcwPiV23J">Lab
-                                    Manual</a>
-                            </p>
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b>Operating system</p>
-                            <p id="links"><a
-                                    href="https://drive.google.com/uc?export=download&amp;id=1OpRNrhSPaYx86ZJK6TxhRIbNfgIoq73U">Material</a>
-                            </p>
-
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
-
-                    <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b> UNIX</p>
-                            <p id="links"> <a
-                                    href=" https://drive.google.com/uc?export=download&amp;id=1nJuF5pWqXpHZw7Ij4bTu90DX3P5i0S-S">Lab
-                                    Manual</a></p>
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
-
-                    <div class="part">
-                        <div class="text">
-                            <p><b>Subject: </b>Indian Constitution</p>
-                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
-                        </div>
-                        <div class="image-holderr">
-                            <img alt="Image 1" src="/data/media/bca.jpeg" />
-                        </div>
-                    </div>
-
-
 
                     <div class="part">
                         <div class="text">
@@ -293,120 +154,171 @@
                         </div>
                     </div>
 
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>Mathematics</p>
+                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
-
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>Digital fluency</p>
+                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
                     <div class="part">
                         <div class="softwares">
                             <p><b>Previous QP's:</b></p>
-                            <p id="links"><a
-                                    href="https://drive.google.com/file/d/1HHZJMXFCmODBF3M-AQSknZ58VtpMClLq/view?usp=sharing">IA
-                                    1</a> <a
-                                    href="https://drive.google.com/file/d/1jByN206eGIwXjmsBgIu3SelfD0pmDP-O/view?usp=sharing">IA
-                                    2</a>
-                                <!-- <a href="#">IA 3</a> -->
-                                <a
-                                    href="https://drive.google.com/file/d/1Hke-h5E-jRj3z2TsLA08DDpDzOiUzlvr/view?usp=sharing">
-                                    SEM End</a>
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/file/d/1khy9TpPm8O1Zby5Ko2SEonPTHdJBxLJB/view?usp=sharing">IA 1</a>
+                                <a href="https://drive.google.com/file/d/1yLSqwxqYbRRbZpwa0FWMJ2H9bBbHGR8V/view?usp=sharing">IA 2</a>
+                                <a href="https://drive.google.com/file/d/1KrfnGCL-8asLgz29AY-UBAU-CcGGtgUh/view?usp=sharing">SEM End</a></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!----------------------- 2nd card endss ------------------->
+            <!----------------------- sem 2 card ------------------->
+            <div class="cardzx" id="cardzx2">
+                <div class="card">
+                    <div class="card-head">
+                        <h2>SEM 2 </h2>
+                    </div>
 
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>Java</p>
+                            <p id="links"><a href="https://drive.google.com/uc?export=download&amp;id=1PrVDNRrBORL3VP0pxjx1kapD-sSTFj3O">Material</a>
+                                <a href="https://drive.google.com/uc?export=download&amp;id=1wSYVbu7Ok_UeEHDM0hhY0pXmnv-h6cUo">Lab Manual</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>Data Structures C</p>
+                            <p id="links"><a href="https://drive.google.com/uc?export=download&amp;id=1QNkPP0OIqAzP_CvhWM7TDaiO9zJapdAm">Material</a>
+                                <a href="https://drive.google.com/uc?export=download&amp;id=1jMqIEmtCBEdu9HdMkAjhNYawcwPiV23J">Lab Manual</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>Operating system</p>
+                            <p id="links"><a href="https://drive.google.com/uc?export=download&amp;id=1OpRNrhSPaYx86ZJK6TxhRIbNfgIoq73U">Material</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>UNIX</p>
+                            <p id="links"><a href="https://drive.google.com/uc?export=download&amp;id=1nJuF5pWqXpHZw7Ij4bTu90DX3P5i0S-S">Lab Manual</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>Indian Constitution</p>
+                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
+                    <div class="part">
+                        <div class="text">
+                            <p><b>Subject: </b>English</p>
+                            <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
+                        </div>
+                        <div class="image-holderr">
+                            <img alt="Image 1" src="/data/media/bca.jpeg" />
+                        </div>
+                    </div>
 
-            
-            <!----------------------- 3rd sem card strts ------------------->
+                    <div class="part">
+                        <div class="softwares">
+                            <p><b>Previous QP's:</b></p>
+                            <p id="links"><a href="https://drive.google.com/file/d/1HHZJMXFCmODBF3M-AQSknZ58VtpMClLq/view?usp=sharing">IA 1</a>
+                                <a href="https://drive.google.com/file/d/1jByN206eGIwXjmsBgIu3SelfD0pmDP-O/view?usp=sharing">IA 2</a>
+                                <a href="https://drive.google.com/file/d/1Hke-h5E-jRj3z2TsLA08DDpDzOiUzlvr/view?usp=sharing">SEM End</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------- sem 3 card ------------------->
             <div class="cardzx" id="cardzx3">
-
-
                 <div class="card">
                     <div class="card-head">
                         <h2>SEM 3 </h2>
-
                     </div>
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Python</p>
-                            <p id="links"><a
-                                    href="https://drive.google.com/drive/folders/1p8cZNohSFL9joNNFbBrC9CMzaS72a3Kt?usp=sharing">Material</a>
-                                <a
-                                    href="https://drive.google.com/file/d/1bIkgAj7AwGws3S1ZpQDYjzl22ottlznF/view?usp=sharing">Record</a>
-
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/drive/folders/1p8cZNohSFL9joNNFbBrC9CMzaS72a3Kt?usp=sharing">Material</a>
+                                <a href="https://drive.google.com/file/d/1bIkgAj7AwGws3S1ZpQDYjzl22ottlznF/view?usp=sharing">Record</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>DBMS</p>
-                            <p id="links"><a
-                                    href="https://drive.google.com/drive/folders/1RoFZlUfTwGeGNqI7Qolk9soNMTsUD0Oz?usp=sharing">Material</a>
-                                <a
-                                    href="https://drive.google.com/file/d/1VXGn4uZY-M2xf-EOSL852qh4tsZuQ2cP/view?usp=sharing">Record</a>
-
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/drive/folders/1RoFZlUfTwGeGNqI7Qolk9soNMTsUD0Oz?usp=sharing">Material</a>
+                                <a href="https://drive.google.com/file/d/1VXGn4uZY-M2xf-EOSL852qh4tsZuQ2cP/view?usp=sharing">Record</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>AI</p>
-                            <p id="links"><a
-                                    href="https://drive.google.com/drive/folders/1nhLNnywtTppPDyLqeqwXZZSQ2s9pOYiG?usp=sharing">Material</a>
-                                <a
-                                    href="https://drive.google.com/file/d/1guteqka0oi0qhjqTEV09tqHt0aT1-7Az/view?usp=sharing">Record</a>
-
-                            </p>
-
+                            <p id="links"><a href="https://drive.google.com/drive/folders/1nhLNnywtTppPDyLqeqwXZZSQ2s9pOYiG?usp=sharing">Material</a>
+                                <a href="https://drive.google.com/file/d/1guteqka0oi0qhjqTEV09tqHt0aT1-7Az/view?usp=sharing">Record</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>EVS</p>
-                            <p id="links"> <a
-                                    href="https://drive.google.com/drive/folders/1I6aii_eW2nDkfXAvc3Ue-HlzsK5yIAgu?usp=sharing">Material</a>
-
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/drive/folders/1I6aii_eW2nDkfXAvc3Ue-HlzsK5yIAgu?usp=sharing">Material</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
 
-
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>UHV</p>
-                            <p id="links"> <a
-                                    href="https://drive.google.com/drive/folders/1FTRXNDnlWy0xEVvWkAn8F3Y2btBfrmd0?usp=sharing">Material</a>
-
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/drive/folders/1FTRXNDnlWy0xEVvWkAn8F3Y2btBfrmd0?usp=sharing">Material</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
@@ -423,283 +335,193 @@
                         </div>
                     </div>
 
-
-
-
                     <div class="part">
                         <div class="softwares">
                             <p><b>Previous QP's:</b></p>
-                            <p id="links"><a href="https://drive.google.com/drive/folders/1mMDuxJ6X8q1SDYE1owK1pWXvlY36aWfM?usp=sharing">IA papers</a> 
-                                <a href="https://drive.google.com/drive/folders/1DpKqPx-D0TlMJJe6Lg6DxmitbkKHTDKV"> SEM End</a>
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/drive/folders/1mMDuxJ6X8q1SDYE1owK1pWXvlY36aWfM?usp=sharing">IA papers</a>
+                                <a href="https://drive.google.com/drive/folders/1DpKqPx-D0TlMJJe6Lg6DxmitbkKHTDKV">SEM End</a></p>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-
-            <!----------------------- 3rd card endss ------------------->
-
-
-
-
-            
-            
-            <!----------------------- 4th sem card strts ------------------->
+            <!----------------------- sem 4 card ------------------->
             <div class="cardzx" id="cardzx4">
-
-
                 <div class="card">
                     <div class="card-head">
                         <h2>SEM 4 </h2>
-
                     </div>
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>C#.NET</p>
-                            <p id="links">
-                                <a href="https://drive.google.com/file/d/1f52XHtJE3lJQDK5ShzZQNG9JNUsc6C4s/view?usp=drivesdk">Record</a>
-
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/file/d/1f52XHtJE3lJQDK5ShzZQNG9JNUsc6C4s/view?usp=drivesdk">Record</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Advanced Web</p>
-                            <p id="links">
-                                <a href="#">Not Available</a>
-                                
-
-                            </p>
+                            <p id="links"><a href="#">Not Available</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Operations Research</p>
-                            <p id="links">
-                                <a href="#">Not Available</a>
-
-                            </p>
-
+                            <p id="links"><a href="#">Not Available</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Computer Networks</p>
-                            <p id="links"> <a href="#">Not Available</a>
-
-                            </p>
+                            <p id="links"><a href="#">Not Available</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Machine Learning</p>
-                            <p id="links"> <a href="#">Not Available</a>
-                                <a href="https://drive.google.com/file/d/1KVR6lJV-te_0fAYBxLZjddsw1L2wAghZ/view?usp=drivesdk">Record</a>
-
-                            </p>
+                            <p id="links"><a href="#">Not Available</a>
+                                <a href="https://drive.google.com/file/d/1KVR6lJV-te_0fAYBxLZjddsw1L2wAghZ/view?usp=drivesdk">Record</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
 
-
-
-
                     <div class="part">
                         <div class="softwares">
                             <p><b>Previous QP's:</b></p>
-                         <!--   <p id="links"><a href="#">IA 1</a> <a href="#">IA 2</a> <a href="#">IA 3</a>
-                                <a href="#"> SEM End</a>
-                            </p> -->
+                            
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <!----------------------- 4th card endss ------------------->
-
-
-
-
-
-            
-            <!----------------------- 5th sem card strts ------------------->
+            <!----------------------- sem 5 card ------------------->
             <div class="cardzx" id="cardzx5">
-
-
                 <div class="card">
                     <div class="card-head">
                         <h2>SEM 5 </h2>
-
                     </div>
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>DAA</p>
-                            <p id="links">
-                                <a href="https://drive.google.com/file/d/15alAiFxEM4wIYQIjHgubJFQBdby-5tLZ/view?usp=sharing">Record</a>
-
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/file/d/15alAiFxEM4wIYQIjHgubJFQBdby-5tLZ/view?usp=sharing">Record</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>R programming</p>
-                            <p id="links">
-                                <a href="https://drive.google.com/file/d/1inzvzBEQkasvvvLkGuIqlYH6FrHJ1qmF/view?usp=sharing">Record</a>
-
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/file/d/1inzvzBEQkasvvvLkGuIqlYH6FrHJ1qmF/view?usp=sharing">Record</a></p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Software Engineering</p>
-                            <p id="links">
-                               
                             <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
-
-                            </p>
-
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Deep learning</p>
-                         
                             <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
-                            </p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
-
 
                     <div class="part">
                         <div class="text">
                             <p><b>Subject: </b>Big Data</p>
-                        
                             <p id="links">Source Unavailable <a href="https://wa.link/2pcbx4">Contribute</a></p>
-
-                            </p>
                         </div>
                         <div class="image-holderr">
                             <img alt="Image 1" src="/data/media/bca.jpeg" />
                         </div>
                     </div>
 
-
-
-
                     <div class="part">
                         <div class="softwares">
                             <p><b>Previous QP's:</b></p>
-                            <p id="links"><a href="https://drive.google.com/drive/folders/1ZUzywxBRhosAzNhFBl_1a1Gu4upeL4wx?usp=sharing">IA papers</a> 
-                                <a href="https://drive.google.com/drive/folders/1c69TPbWEstgAjJGYulLrHCyV0-ETtVtB?usp=sharing"> SEM End</a>
-                            </p>
+                            <p id="links"><a href="https://drive.google.com/drive/folders/1ZUzywxBRhosAzNhFBl_1a1Gu4upeL4wx?usp=sharing">IA papers</a>
+                                <a href="https://drive.google.com/drive/folders/1c69TPbWEstgAjJGYulLrHCyV0-ETtVtB?usp=sharing">SEM End</a></p>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <!----------------------- 5th card endss ------------------->
-
-
-
-
-
-
-            
-            <!----------------------- 6th sem card strts ------------------->
-
+            <!----------------------- sem 6 card ------------------->
             <div class="cardzx" id="cardzx6">
-
                 <div class="card">
                     <div class="card-head">
                         <h2>SEM 6 </h2>
-
                     </div>
 
                     <div class="part part-loading">
                         <div class="text-loading">.</div>
                         <div class="image-loading">
+                        </div>
+                    </div>
 
-                        </div>
-                    </div>
                     <div class="part part-loading">
                         <div class="text-loading">.</div>
                         <div class="image-loading">
                         </div>
                     </div>
+
                     <div class="part part-loading">
                         <div class="text-loading">.</div>
                         <div class="image-loading">
                         </div>
                     </div>
+
                     <div class="part part-loading">
                         <div class="text-loading">.</div>
                         <div class="image-loading">
                         </div>
                     </div>
+
                     <div class="part part-loading">
                         <div class="text-loading">.</div>
                         <div class="image-loading">
                         </div>
                     </div>
+
                     <div class="part part-loading">
                         <div class="text-loading">.</div>
                         <div class="image-loading">
                         </div>
                     </div>
+
                     <div class="part part-loading">
                         <div class="text-loading">.</div>
                         <div class="image-loading">
@@ -707,9 +529,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-----------------------6th card endss ------------------->
 
         </div>
     </div>
@@ -717,26 +536,6 @@
 
     <!----------------------- card main conatiner endss ------------------->
 
-
-
-    <!--projects in blogger-->
-    <div class="line" id="line"></div>
-    <h2 id="prj-heading">Projects by students..</h2>
-
-    <div class="holder222">
-        <!-- Left Section with Circular Buttons -->
-        <div class="left-section222">
-            <h2 style="color: white; margin: 0px;">Semester</h2>
-            <div class="btnzzp" id="semester-buttons"></div>
-        </div>
-
-        <!-- Right Section with Cards -->
-        <div class="right-section222" id="semester-cards"></div>
-    </div>
-
-
-
-    <!--projects inn blogger enddd-->
 
     <!--footer-->
 
@@ -749,53 +548,62 @@
                 Near Sindhigeri, GP No:735, Hagalur, Siruguppa Taluk,
                 Ballari District-583 120, Karnataka.</p>
 
-
-
-        </div>
-
-
-        <div class="courses-div">
-            <h5 class="address-heading">Courses</h5>
-            <p class="sub-address-heading"> <b> Under Graduate courses:</b></p>
-            <p class="ug-sub"><a href="/html/BCA.html"> BCA</a> |<a href="/html/CSE.html"> BTech-CSE</a> | <a
-                    href="/html/ECE.html"> BTech-ECE</a> |<a href="/html/EEE.html"> BTech-EEE</a> </p>
-
-            <p class="sub-address-heading"> <b> Post Graduate courses:</b></p>
-            <p class="ug-sub"><a href="/html/MCA.html"> MCA</a> |<a href="/html/MBA.html"> MBA</a> </p>
-            <h5 class="address-heading"><u><a href="https://ku-hub.blogspot.com/index.html"> BLOG</a> </u></h5>
-            <p class="description-address" style="font-size: 15px;">"Discover the latest updates and insights from our
-                KU community. Dive into our blog and stay connected with all the exciting happenings!"
-            </p>
-        </div>
-
-        <div class="contact-div">
-            <h5 class="address-heading">Admissions</h5>
-            <p style="text-align: center;"> <i class="fa-solid fa-phone"></i> 08392 195529</p>
-
-            <h5 class="address-heading">Contact Site Admins</h5>
-            <div class="s-c-media">
-                <a href="https://wa.link/0ijg5t"> <i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://wa.link/ellin1"> <i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-
-            <h5 class="address-heading">Social Media</h5>
+            <h5 class="address-heading" style="margin-top:18px;">College Social Media</h5>
             <div class="s-media">
                 <a href="https://www.instagram.com/kishkindauniversity/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/kishkindauniversity"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.youtube.com/@KishkindaUniversity"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/company/kishkindauniversity/"><i
-                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/kishkindauniversity/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://x.com/KishkindaUni"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-div">
+            <h5 class="address-heading">Site Admin</h5>
+            <div class="s-c-media">
+                <a href="https://wa.link/0ijg5t"> <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/nawazuddin.nz"> <i class="fa-brands fa-instagram"></i></a>
+                <!-- TODO: put your LinkedIn profile URL in href -->
+                <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
             </div>
 
             <h3 id="nh">-NH</h3>
-
-
         </div>
     </div>
 
 
     <script>
+        /* =============================================================
+           RESOURCES - edit only this list.
+           active:true  -> card opens the link in a new tab
+           active:false -> card is greyed out (deactivated)
+           To activate later: change link and set active:true
+           ============================================================= */
+        const RESOURCES = [
+            { subject: "Problem Solving with C", name: "Lab Programs M1", active: true,
+              link: "https://docs.google.com/document/d/1xQAvAoYWuhKezzJ-atUG6UxEQXWhiNSp/edit?usp=sharing&ouid=103105048356912197951&rtpof=true&sd=true" },
+            { subject: "Problem Solving with C", name: "Lab Programs M2", active: true,
+              link: "https://docs.google.com/document/d/1C_E6xeXsxa8AyAcev-WMecYkobL8E7_W/edit?usp=sharing&ouid=103105048356912197951&rtpof=true&sd=true" },
+            { subject: "Subject name", name: "Resource name", active: false, link: "#" },
+            { subject: "Subject name", name: "Resource name", active: false, link: "#" }
+        ];
+
+        const resGrid = document.getElementById('res-grid');
+        RESOURCES.forEach((r, i) => {
+            const card = document.createElement(r.active ? 'a' : 'div');
+            card.className = 'res-card' + (r.active ? '' : ' off');
+            if (r.active) { card.href = r.link; card.target = '_blank'; card.rel = 'noopener'; }
+            else { card.setAttribute('aria-disabled', 'true'); }
+            const add = (cls, text) => { const s = document.createElement('span'); s.className = cls; s.textContent = text; card.appendChild(s); };
+            add('res-num', String(i + 1).padStart(2, '0'));
+            add('res-sub', r.subject);
+            add('res-name', r.name);
+            add('res-go', r.active ? 'Open \u2197' : 'Coming soon');
+            resGrid.appendChild(card);
+        });
+
+
+        // ---- semester tabs (original code) ----
         // Get all buttons and cardzxs
         const buttons = document.querySelectorAll('.buttonzz');
         const cardzxs = document.querySelectorAll('.cardzx');
@@ -815,117 +623,6 @@
                 this.classList.add('active');
             });
         });
-
-
-        // projects js 
-
-        const buttons222 = document.querySelectorAll('.button222');
-        const cards222 = document.querySelectorAll('.card222');
-
-        // Add click event to each button
-        buttons222.forEach(button => {
-            button.addEventListener('click', function () {
-                // Remove active class from all cards
-                cards222.forEach(card => card.classList.remove('active'));
-
-                // Remove active class from all buttons
-                buttons222.forEach(btn => btn.classList.remove('active'));
-
-                // Get the target card ID and show it
-                const targetId = this.getAttribute('data-target');
-                document.getElementById(targetId).classList.add('active');
-
-                // Add active class to the clicked button
-                this.classList.add('active');
-            });
-        });
-
-
-
-
-        async function loadProjects() {
-            const res = await fetch("/data/projects.json");
-            const data = await res.json();
-
-            const btnContainer = document.getElementById("semester-buttons");
-            const cardContainer = document.getElementById("semester-cards");
-
-            data.semesters.forEach((sem, index) => {
-                // Create button
-                const btn = document.createElement("div");
-                btn.className = "button222";
-                btn.setAttribute("data-target", `card${index + 1}222`);
-                btn.innerText = `${index + 1}`;
-                if (index === 0) btn.classList.add("active"); // first default active
-                btnContainer.appendChild(btn);
-
-                // Create semester card
-                const card = document.createElement("div");
-                card.className = "card222";
-                if (index === 0) card.classList.add("active");
-                card.id = `card${index + 1}222`;
-
-                let innerHTML = `
-      <div class="prj-main">
-        <h4>${sem.semester}</h4>
-        <div class="project-container">
-    `;
-
-                sem.projects.forEach(project => {
-                    innerHTML += `
-        <div class="project-card">
-          <div class="left">
-            <h3 class="titlee">Title: ${project.title}</h3>
-            <div class="desc"><p>${project.desc}</p></div>
-            <div class="date-url">
-              <div class="date">
-                ${project.whatsapp ? `<a href="${project.whatsapp}" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> |` : ""}
-                ${project.date}
-              </div>
-              | <p id="url-a"><a href="${project.projectLink}" target="_blank"><b>link:</b> visit site</a></p>
-            </div>
-          </div>
-          <div class="team">
-            <h4>Team</h4>
-           
-              ${project.team.map(m => `
-                <div class="team-images">
-                  <img src="${m.img}" alt="${m.name}" />
-                  <div class="overlay">
-                  <p>${m.name}</p>
-                  ${m.linkedin ? `<a href="${m.linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>` : ""}
-                  </div>
-                </div>`).join("")}
-           
-          </div>
-        </div>
-      `;
-                });
-
-                innerHTML += `</div></div>`;
-                card.innerHTML = innerHTML;
-                cardContainer.appendChild(card);
-            });
-
-            // Attach toggle events (same as your code)
-            const buttons222 = document.querySelectorAll('.button222');
-            const cards222 = document.querySelectorAll('.card222');
-            buttons222.forEach(button => {
-                button.addEventListener('click', function () {
-                    cards222.forEach(card => card.classList.remove('active'));
-                    buttons222.forEach(btn => btn.classList.remove('active'));
-                    const targetId = this.getAttribute('data-target');
-                    document.getElementById(targetId).classList.add('active');
-                    this.classList.add('active');
-                });
-            });
-        }
-
-        loadProjects();
-
-
-
-
     </script>
 </body>
 
