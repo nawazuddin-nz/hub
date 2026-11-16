@@ -6,6 +6,50 @@
     <title>Ku-Hub</title>
     <link rel="stylesheet" href="/styles/home.css" />
      <link rel="icon" type="image/png" href="/data/media/favku.ico">
+
+    <style>
+    /* ===== Professional theme + centered cards (overrides home.css) ===== */
+    :root{--navy:#0b2545;--blue:#13315c;--accent:#c9a227;--soft:#eef2f7;--ink:#1f2937;--muted:#5b6575;}
+    body{background:var(--soft)!important;color:var(--ink)!important;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif!important;}
+    .title{background:var(--navy)!important;color:#fff!important;letter-spacing:2px;}
+    .nav-barz{background:#fff!important;border-bottom:3px solid var(--accent)!important;box-shadow:0 2px 10px rgba(11,37,69,.12)!important;}
+    .menuuu a,.nav-barz a{color:var(--navy)!important;}
+    .menuuu a:hover{color:var(--accent)!important;}
+    .dropdown{background:#fff!important;border:1px solid #dde3ec!important;box-shadow:0 8px 20px rgba(11,37,69,.15)!important;}
+    .dropdown a{color:var(--navy)!important;}
+    .dropdown a:hover{background:var(--soft)!important;}
+    .hamburger div{background:var(--navy)!important;}
+    .mobile-menuuu{background:#fff!important;}
+    .mobile-menuuu a{color:var(--navy)!important;}
+    .baksaaa{background:linear-gradient(135deg,#ffffff 0%,#e3eaf3 100%)!important;}
+    .baksaaa h1,.baksaaa h1 span{color:var(--navy)!important;}
+    .baksaaa h1 span{color:var(--accent)!important;}
+    .baksaaa p{color:var(--muted)!important;}
+    .baksaaa p b,.baksaaa p[style]{color:var(--navy)!important;}
+
+    /* centered course cards */
+    #main-courses{display:flex!important;flex-direction:column!important;align-items:center!important;padding:40px 16px!important;}
+    #main-courses .heading{width:100%!important;text-align:center!important;}
+    #main-courses .heading p{color:var(--navy)!important;font-weight:700;letter-spacing:3px;border-bottom:3px solid var(--accent);display:inline-block;padding-bottom:6px;}
+    #main-courses .left{display:flex!important;flex-wrap:wrap;justify-content:center!important;align-items:center!important;width:90%!important;max-width:900px!important;margin:20px auto!important;background:#fff!important;border:1px solid #dde3ec!important;border-radius:12px!important;box-shadow:0 6px 18px rgba(11,37,69,.10)!important;overflow:hidden;}
+    #main-courses .boul{text-align:center!important;padding:24px!important;color:var(--ink)!important;}
+    #main-courses .boul h2{color:var(--navy)!important;}
+    #main-courses .right{display:flex;justify-content:center;align-items:center;}
+    #main-courses .right img{max-width:100%;height:auto;border-radius:8px;}
+    #btnn{background:var(--navy)!important;color:#fff!important;border:none!important;border-radius:6px!important;padding:10px 22px!important;cursor:pointer;transition:background .2s;}
+    #btnn:hover{background:var(--accent)!important;color:var(--navy)!important;}
+
+    .blog-img{background:var(--blue)!important;color:#fff!important;}
+    .blog-img p,.blog-img .h6{color:#fff!important;}
+    .blog-btn{background:var(--accent)!important;color:var(--navy)!important;font-weight:600;border-radius:6px!important;}
+
+    /* footer */
+    .foooter{background:var(--navy)!important;color:#dbe4f0!important;}
+    .foooter a,.foooter p,.foooter b,.foooter h3{color:#dbe4f0!important;}
+    .foooter .address-heading{color:var(--accent)!important;}
+    .foooter a:hover{color:var(--accent)!important;}
+    .s-media,.s-c-media{display:flex;gap:16px;justify-content:center;font-size:22px;}
+    </style>
 </head>
 <body>
 
@@ -200,37 +244,29 @@
         Near Sindhigeri,<a id="jsongen" href="/html/jsongen.html"> GP No:735,</a> Hagalur, Siruguppa Taluk,
         Ballari District-583 120, Karnataka.</p>
         </div>
+    <h5 class="address-heading" style="margin-top:18px;">College Social Media</h5>
+    <div class="s-media">
+   <a href="https://www.instagram.com/kishkindauniversity/"><i class="fa-brands fa-instagram"></i></a>
+   <a href="https://www.facebook.com/kishkindauniversity"><i class="fa-brands fa-facebook"></i></a>
+   <a href="https://www.youtube.com/@KishkindaUniversity"><i class="fa-brands fa-youtube"></i></a>
+   <a href="https://www.linkedin.com/company/kishkindauniversity/"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="https://x.com/KishkindaUni"><i class="fa-brands fa-twitter"></i></a>
+    </div>
  </div>
  
  <div class="courses-div">
-    <h5 class="address-heading">Courses</h5>   
-     <p class="sub-address-heading"> <b> Under Graduate courses:</b></p>
-    <p class="ug-sub"><a href="/html/BCA.html"> BCA</a></p>
- 
-    <p class="sub-address-heading"> <b> Post Graduate courses:</b></p>
-    <p class="ug-sub"><a href="/html/MCA.html"> MCA</a></p>
     <h5 class="address-heading"><u><a href="https://ku-hub.blogspot.com/index.html"> BLOG</a> </u></h5> 
     <p class="description-address" style="font-size: 15px;">"Discover the latest updates and insights from our KU community. Dive into our blog and stay connected with all the exciting happenings!"
        </p> 
  </div>
  
  <div class="contact-div">
-    <h5 class="address-heading">Admissions</h5>  
-   <p style="text-align: center;"> <i class="fa-solid fa-phone"></i> 08392 195529</p>
-  
-       <h5 class="address-heading">Contact Site Admins</h5>  
+       <h5 class="address-heading">Site Admin</h5>
    <div class="s-c-media">
-   <a href="https://wa.link/0ijg5t"> <i class="fa-brands fa-whatsapp"></i></a>
-   <a href="https://wa.link/ellin1"> <i class="fa-brands fa-whatsapp"></i></a>
- </div>
-  
-   <h5 class="address-heading">Social Media</h5>  
-   <div class="s-media">
-   <a href="https://www.instagram.com/kishkindauniversity/"><i class="fa-brands fa-instagram"></i></a>
-   <a href="https://www.facebook.com/kishkindauniversity"><i class="fa-brands fa-facebook"></i></a>
-   <a href="https://www.youtube.com/@KishkindaUniversity"><i class="fa-brands fa-youtube"></i></a>
-   <a href="https://www.linkedin.com/company/kishkindauniversity/"><i class="fa-brands fa-linkedin"></i></a>
-   <a href="https://x.com/KishkindaUni"><i class="fa-brands fa-twitter"></i></a>
+   <a href="https://wa.link/0ijg5t" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="https://www.instagram.com/nawazuddin.nz" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+   <!-- TODO: put your LinkedIn profile URL below -->
+   <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
  </div>
  
  <h3 id="nh">-NH</h3>
