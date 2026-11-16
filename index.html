@@ -211,15 +211,7 @@
 
 
 
-<div class="body-sliderrrr">
-    <div class="blog-img">
-        <div class="h6">Blog:</div>
-        <p>"Keep up with the latest news and happenings within our KU community. Browse our blog for fresh insights and exciting updates!"</p>
-       <a href="https://ku-hub.blogspot.com/index.html"> <div class="blog-btn">Visit</div> </a>
-    </div>
-</div>
-
-  <!--blog box complete-->
+<!--blog box complete-->
 
   <!--footer-->
   
@@ -247,12 +239,6 @@
    <a href="https://www.linkedin.com/company/kishkindauniversity/"><i class="fa-brands fa-linkedin"></i></a>
    <a href="https://x.com/KishkindaUni"><i class="fa-brands fa-twitter"></i></a>
     </div>
- </div>
- 
- <div class="courses-div">
-    <h5 class="address-heading"><u><a href="https://ku-hub.blogspot.com/index.html"> BLOG</a> </u></h5> 
-    <p class="description-address" style="font-size: 15px;">"Discover the latest updates and insights from our KU community. Dive into our blog and stay connected with all the exciting happenings!"
-       </p> 
  </div>
  
  <div class="contact-div">
@@ -378,7 +364,7 @@ menuuuItems.forEach(item => {
 
 <script>
 (function(){
-  var els=document.querySelectorAll('#main-courses .heading,.ccard,.blog-img');
+  var els=document.querySelectorAll('#main-courses .heading,.ccard');
   els.forEach(function(e,i){e.classList.add('reveal');e.style.transitionDelay=(i*90)+'ms';});
   var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
   els.forEach(function(e){io.observe(e);});
